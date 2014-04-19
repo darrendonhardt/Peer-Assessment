@@ -33,14 +33,14 @@
 # Create Features Table --------------------------------------------------------
 
 # Load features table
-filename = "./UCI HAR Dataset/features.txt"
+filename = "./UCI_HAR_Dataset/features.txt"
 feature.list <- read.table(filename, col.names = c("feature.id","feature.name"))
 
 
 # Create Activity Table --------------------------------------------------------
 
 # Load activity table
-filename = "./UCI HAR Dataset/activity_labels.txt"
+filename = "./UCI_HAR_Dataset/activity_labels.txt"
 activity.list <- read.table(filename, col.names = c("activity.code"
                                                     ,"activity.name"))
 
@@ -48,17 +48,17 @@ activity.list <- read.table(filename, col.names = c("activity.code"
 # Create Test Results Tables ---------------------------------------------------
 
 # Load test subject file
-filename <- "./UCI HAR Dataset/test/subject_test.txt"
+filename <- "./UCI_HAR_Dataset/test/subject_test.txt"
 test.subject <- read.table(filename,header=FALSE,col.names="subject.code")
 
 # load test results data file
-filename <- "./UCI HAR Dataset/test/x_test.txt"
+filename <- "./UCI_HAR_Dataset/test/x_test.txt"
 initial <- read.table(filename, nrows = 100)
 classes <- sapply(initial,class)
 results.test.data <- read.table(filename, colClasses = classes)
 
 # load test results activity file
-filename <- "./UCI HAR Dataset/test/y_test.txt"
+filename <- "./UCI_HAR_Dataset/test/y_test.txt"
 test.results.activity.code <- read.table(filename,header=FALSE,
                                        col.names="activity.code")
 
@@ -78,17 +78,17 @@ results.test <- data.frame(type="train",
 # Create Train Results Tables --------------------------------------------------
 
 # Load train subject file
-filename <- "./UCI HAR Dataset/train/subject_train.txt"
+filename <- "./UCI_HAR_Dataset/train/subject_train.txt"
 train.subject <- read.table(filename,header=FALSE,col.names="subject.code")
 
 # load train results data from file
-filename = "./UCI HAR Dataset/train/x_train.txt"
+filename = "./UCI_HAR_Dataset/train/x_train.txt"
 initial <- read.table(filename, nrows = 100)
 classes <- sapply(initial,class)
 results.train.data <- read.table(filename, colClasses = classes)
 
 # load train results activity file
-filename <- "./UCI HAR Dataset/train/y_train.txt"
+filename <- "./UCI_HAR_Dataset/train/y_train.txt"
 results.train.labels <- read.table(filename,header=FALSE, 
                                    col.names="activity.code")
 
