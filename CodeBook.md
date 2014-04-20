@@ -1,7 +1,7 @@
 # CODE BOOK
 
 
-**Variables**
+**VARIABLES**
 * `features.list` - data.frame that stores the imported file relating to all features or measurements made as documented in the experiments conducted.
 * `activity.list` - data.frame that stores the list of activities. Activity code and name.
 
@@ -23,25 +23,30 @@ _Train results_
 * col.list - list of feature labels as identified by the positions mentioned in feature.stdmean. List of feature labels relating to measurements that have standard deviation or mean pre-processing.
 * aggdata - aggregation of results.stdmean by subject and activity. This shows 180 combinations based on the existing data set.
 
-**Data**
+
+**DATA**
 
 The source data is comprised of essentially 2 areas:
 
 _Metadata (labels)_
+
 * activity_labels.txt - describe the activities in terms of labels rather than codes.
 * features.txt - describes the features in terms of labels rather than codes.
 * features_info.txt - describes the feature content / selection. This was not used by the R script.
 
 _Data_
+
 The Data area is further broken down into "train" and "test" data sets. I explain the test data set, which applies equally to the "train" data set
 * X_test.txt - file containing the measurements for each experiment window sample. In test there are 2947 samples, in train there are 7352 samples.
 * Y_test.txt - file containing the activity codes relating to each experiment window sample.
 * subject_test.txt - file containing the subject codes relating to each experiment window sample.
 
 _Data assumption made_
+
 There is no unique identifier for each window sample or record in the data sets "X_test.txt",'y_test.txt","subject_test". It is assumed that all 3 files contain data that is in the same order as each other. It is assumed that the first row in "X_test.txt" is an experiment window sample that directly relates to the first row in each of the other two files
 
-**Transforms**
+
+**TRANSFORMS**
 
 The transforms are as follows:
 
