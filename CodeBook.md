@@ -38,6 +38,8 @@ The Data area is further broken down into "train" and "test" data sets. I explai
 * Y_test.txt - file containing the activity codes relating to each experiment window sample.
 * subject_test.txt - file containing the subject codes relating to each experiment window sample.
 
+_Data assumption made_
+There is no unique identifier for each window sample or record in the data sets "X_test.txt",'y_test.txt","subject_test". It is assumed that all 3 files contain data that is in the same order as each other. It is assumed that the first row in "X_test.txt" is an experiment window sample that directly relates to the first row in each of the other two files
 
 **Transforms**
 
