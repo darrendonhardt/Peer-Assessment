@@ -24,6 +24,7 @@ _Train results_
 * aggdata - aggregation of results.stdmean by subject and activity. This shows 180 combinations based on the existing data set.
 
 **Data**
+
 The source data is comprised of essentially 2 areas:
 
 _Metadata (labels)_
