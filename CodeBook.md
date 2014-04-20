@@ -2,7 +2,7 @@
 
 
 **Variables**
-* `features.list` - data.frame that stores the imported file relating to all features or measurements made surrounding the original experiement
+* `features.list` - data.frame that stores the imported file relating to all features or measurements made as documented in the experiments conducted.
 * `activity.list` - data.frame that stores the list of activities. Activity code and name.
 
 _Test Results_
