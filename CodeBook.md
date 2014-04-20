@@ -36,7 +36,7 @@ _Metadata (labels)_
 
 _Data_
 
-The Data area is further broken down into "train" and "test" data sets. I explain the test data set, which applies equally to the "train" data set
+The Data area is further broken down into "train" and "test" data sets. I will explain the test data set, which applies equally to the "train" data set
 * X_test.txt - file containing the measurements for each experiment window sample. In test there are 2947 samples, in train there are 7352 samples.
 * Y_test.txt - file containing the activity codes relating to each experiment window sample.
 * subject_test.txt - file containing the subject codes relating to each experiment window sample.
